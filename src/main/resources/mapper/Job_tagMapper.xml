@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.mapper.Job_tagMapper" >
+
+    <select id="queryJob_tag"  resultType="com.job.pojo.Job_tag" >
+        select * from db_job_tag
+    </select>
+
+</mapper>

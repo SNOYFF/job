@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.mapper.SalaryMapper" >
+
+    <select id="avgSalary"  resultType="com.job.pojo.Salary">
+        select avg(job_salary_avg) as avgSalary from db_job
+    </select>
+
+    <select id="highSalary"  resultType="com.job.pojo.Salary">
+        select max(job_salary_high) as highSalary from db_job
+    </select>
+
+    <select id="lowSalary"  resultType="com.job.pojo.Salary">
+        select min(job_salary_low) as lowSalary from db_job
+    </select>
+
+    <select id="avgSalaryWithBJ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "北京"
+    </select>
+
+    <select id="highSalaryWithBJ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "北京"
+    </select>
+
+    <select id="lowSalaryWithBJ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "北京"
+    </select>
+
+    <select id="avgSalaryWithSH"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "上海"
+    </select>
+
+    <select id="highSalaryWithSH"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "上海"
+    </select>
+
+    <select id="lowSalaryWithSH"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "上海"
+    </select>
+
+    <select id="avgSalaryWithSZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "深圳"
+    </select>
+
+    <select id="highSalaryWithSZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "深圳"
+    </select>
+
+    <select id="lowSalaryWithSZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "深圳"
+    </select>
+
+    <select id="avgSalaryWithHZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "杭州"
+    </select>
+
+    <select id="highSalaryWithHZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "杭州"
+    </select>
+
+    <select id="lowSalaryWithHZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "杭州"
+    </select>
+
+    <select id="avgSalaryWithGZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "广州"
+    </select>
+
+    <select id="highSalaryWithGZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "广州"
+    </select>
+
+    <select id="lowSalaryWithGZ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "广州"
+    </select>
+
+    <select id="avgSalaryWithCD"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "成都"
+    </select>
+
+    <select id="highSalaryWithCD"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "成都"
+    </select>
+
+    <select id="lowSalaryWithCD"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "成都"
+    </select>
+
+    <select id="avgSalaryWithWH"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "武汉"
+    </select>
+
+    <select id="highSalaryWithWH"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "武汉"
+    </select>
+
+    <select id="lowSalaryWithWH"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "武汉"
+    </select>
+
+    <select id="avgSalaryWithNJ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select avg(job_salary_avg) as avgSalary from db_job where company_location_A = "南京"
+    </select>
+
+    <select id="highSalaryWithNJ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select max(job_salary_high) as highSalary from db_job where company_location_A = "南京"
+    </select>
+
+    <select id="lowSalaryWithNJ"  resultType="com.job.pojo.Salary" parameterType="string">
+        select min(job_salary_low) as lowSalary from db_job where company_location_A = "南京"
+    </select>
+
+</mapper>

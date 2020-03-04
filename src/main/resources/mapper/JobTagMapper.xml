@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.job.mapper.JobTagMapper" >
+
+    <select id="queryBJ"  resultType="com.job.pojo.JobTag" >
+        select * from db_bj_jobtag
+    </select>
+    <select id="querySH"  resultType="com.job.pojo.JobTag" >
+        select * from db_sh_jobtag
+    </select>
+    <select id="querySZ"  resultType="com.job.pojo.JobTag" >
+        select * from db_sz_jobtag
+    </select>
+    <select id="queryHZ"  resultType="com.job.pojo.JobTag" >
+        select * from db_hz_jobtag
+    </select>
+    <select id="queryNJ"  resultType="com.job.pojo.JobTag" >
+        select * from db_nj_jobtag
+    </select>
+    <select id="queryGZ"  resultType="com.job.pojo.JobTag" >
+        select * from db_gz_jobtag
+    </select>
+    <select id="queryCD"  resultType="com.job.pojo.JobTag" >
+        select * from db_cd_jobtag
+    </select>
+    <select id="queryWH"  resultType="com.job.pojo.JobTag" >
+        select * from db_wh_jobtag
+    </select>
+
+</mapper>
