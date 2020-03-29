@@ -130,9 +130,8 @@
             <div class="nav_menu">
                 <div class="nav toggle">
                   <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-				  
                 </div>
-				<div class="btn-group" style="padding-top: 8px;padding-left: 28%;" >
+				<div class="btn-group" style="padding-top: 8px;padding-left: 10%;" >
 				  <button type="button" class="btn btn-default " @click="BJ();getjobtag_bj()">北京</button>
 				  <button type="button" class="btn btn-default" @click="SH();getjobtag_sh()">上海</button>
 				  <button type="button" class="btn btn-default" @click="SZ();getjobtag_sz()">深圳</button>
@@ -141,8 +140,15 @@
 				  <button type="button" class="btn btn-default" @click="GZ();getjobtag_gz()">广州</button>
 				  <button type="button" class="btn btn-default" @click="CD();getjobtag_cd()">成都</button>
 				  <button type="button" class="btn btn-default" @click="WH();getjobtag_wh()">武汉</button>
+				  <!-- <input type="text"  v-model="message" @keyup.enter="get"/> -->
+				  <div >
+				  	<input type="text"  v-model="message" @keyup.enter="get" autocomplete="off" placeholder="输入地区按回车搜索" style="height: 35px;"/>
+				  </div>
+				
 				</div>
-               
+               <div >
+                   
+                </div>
             </div>
           </div>
         <!-- /top navigation -->
@@ -211,7 +217,7 @@
         </footer>
         <!-- /footer content -->
       </div>
-    
+ 
 	<script src="./js/all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="./js/city.js" type="text/javascript" charset="utf-8"></script>
 
