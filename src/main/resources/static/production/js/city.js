@@ -1,6 +1,7 @@
 var city = new Vue({
 	el:'#main',
 	data:{
+		message:"",
 		titles:"",
 		avgs:'',
 		highs:'',
@@ -649,6 +650,40 @@ var city = new Vue({
 									}
 								},function(err){})
 				},
+		
+		get:function(){
+			var that = this;
+			if (that.message =="北京") {
+				this.BJ();
+				this.getjobtag_bj()
+			}else if(that.message =="上海"){
+				this.SH();
+				this.getjobtag_sh();
+			}else if(that.message =="深圳"){
+				this.SZ();
+				this.getjobtag_sz();
+			}else if(that.message =="杭州"){
+				this.HZ();
+				this.getjobtag_hz();
+			}else if(that.message =="南京"){
+				this.NJ();
+				this.getjobtag_nj();
+			}else if(that.message =="广州"){
+				this.GZ();
+				this.getjobtag_gz();
+			}else if(that.message =="成都"){
+				this.CD();
+				this.getjobtag_cd();
+			}else if(that.message =="武汉"){
+				this.WH();
+				this.getjobtag_wh();
+			}
+			else{
+				alert("对不起，该地区因数据不足而无法分析！")
+			}
+			
+			
+		}
 	},
 	mounted() {
 		this.BJ();
