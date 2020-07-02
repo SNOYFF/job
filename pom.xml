@@ -47,7 +47,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.11</version><!--不注明的版本的话自动配置相应的mysql版本-->
+            <version>8.0.16</version><!--不注明的版本的话自动配置相应的mysql版本-->
         </dependency>
 
         <!--lombok插件，在pojo类上加一个注解@Data就可以了-->
